@@ -1,0 +1,186 @@
+{
+  "user": [
+    {
+      "username": "Boris Johnson",
+      "id": "1",
+      "listdata": [
+        {
+          "id": "1",
+          "tittle": "Each TODO task has following information: Content (text), Status (Active / Inactive)"
+        },
+        {
+          "id": "2",
+          "tittle": "Inactive Tasks will be "
+        },
+        {
+          "id": "3",
+          "tittle": "User can Add new TODO task"
+        },
+        {
+          "id": "4",
+          "tittle": "User can Edit TODO task content"
+        },
+        {
+          "id": "5",
+          "tittle": "User can Delete TODO task"
+        }
+      ]
+    },
+    {
+      "username": "Jeremy Corbyn",
+      "id": "2",
+      "listdata": [
+        {
+          "id": "1",
+          "tittle": "Each TODO task has following information: Content (text), Status (Active / Inactive)"
+        },
+        {
+          "id": "2",
+          "tittle": "Inactive Tasks will be "
+        },
+        {
+          "id": "3",
+          "tittle": "User can Add new TODO task"
+        },
+        {
+          "id": "4",
+          "tittle": "User can Edit TODO task content"
+        },
+        {
+          "id": "5",
+          "tittle": "User can Delete TODO task"
+        }
+      ]
+    },
+    {
+      "username": "Theresa May",
+      "id": "3",
+      "listdata": [
+        {
+          "id": "1",
+          "tittle": "Each TODO task has following information: Content (text), Status (Active / Inactive)"
+        },
+        {
+          "id": "2",
+          "tittle": "Inactive Tasks will be "
+        },
+        {
+          "id": "3",
+          "tittle": "User can Add new TODO task"
+        },
+        {
+          "id": "4",
+          "tittle": "User can Edit TODO task content"
+        },
+        {
+          "id": "5",
+          "tittle": "User can Delete TODO task"
+        }
+      ]
+    },
+    {
+      "username": "Angela Merkel",
+      "id": "4",
+      "listdata": [
+        {
+          "id": "1",
+          "tittle": "Each TODO task has following information: Content (text), Status (Active / Inactive)"
+        },
+        {
+          "id": "2",
+          "tittle": "Inactive Tasks will be "
+        },
+        {
+          "id": "3",
+          "tittle": "User can Add new TODO task"
+        },
+        {
+          "id": "4",
+          "tittle": "User can Edit TODO task content"
+        },
+        {
+          "id": "5",
+          "tittle": "User can Delete TODO task"
+        }
+      ]
+    },
+    {
+      "username": "Emmanuel Macron",
+      "id": "5",
+      "listdata": [
+        {
+          "id": "1",
+          "tittle": "Each TODO task has following information: Content (text), Status (Active / Inactive)"
+        },
+        {
+          "id": "2",
+          "tittle": "Inactive Tasks will be "
+        },
+        {
+          "id": "3",
+          "tittle": "User can Add new TODO task"
+        },
+        {
+          "id": "4",
+          "tittle": "User can Edit TODO task content"
+        },
+        {
+          "id": "5",
+          "tittle": "User can Delete TODO task"
+        }
+      ]
+    },
+    {
+      "username": "Hary Kane",
+      "id": "6",
+      "listdata": [
+        {
+          "id": "1",
+          "tittle": "Each TODO task has following information: Content (text), Status (Active / Inactive)"
+        },
+        {
+          "id": "2",
+          "tittle": "Inactive Tasks will be "
+        },
+        {
+          "id": "3",
+          "tittle": "User can Add new TODO task"
+        },
+        {
+          "id": "4",
+          "tittle": "User can Edit TODO task content"
+        },
+        {
+          "id": "5",
+          "tittle": "User can Delete TODO task"
+        }
+      ]
+    },
+    {
+      "username": "123",
+      "id": "9b283547-43ac-4d0a-8fbb-df1fba6b7b11",
+      "listdata": [
+        {
+          "id": "1",
+          "tittle": "Each TODO task has following information: Content (text), Status (Active / Inactive)"
+        },
+        {
+          "id": "2",
+          "tittle": "Inactive Tasks will be "
+        },
+        {
+          "id": "3",
+          "tittle": "User can Add new TODO task"
+        },
+        {
+          "id": "4",
+          "tittle": "User can Edit TODO task content"
+        },
+        {
+          "id": "5",
+          "tittle": "User can Delete TODO task"
+        }
+      ]
+    }
+  ]
+}
