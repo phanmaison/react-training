@@ -1,4 +1,12 @@
 import React from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useParams,
+    useRouteMatch
+  } from "react-router-dom";
 
 export default class LoginLayout extends React.Component{
 
@@ -11,7 +19,10 @@ export default class LoginLayout extends React.Component{
             <div>
                 <div className="App">
                     Login page
-                    <a style={{float:"right" }} href="/" > Main Page </a>
+                    
+                <div style={{float: "right"}}>
+                  <Link to="/">Main Page</Link>
+                  </div>
                 </div>
                 <div className="container">
                     <input type="text" /> <button onClick={this.onLogin}>Login</button>

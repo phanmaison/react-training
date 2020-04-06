@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../logo.svg';
 import '../../App.css';
+import { Link } from 'react-router-dom';
 
 export default class MainLayout extends React.Component{
     
@@ -10,7 +11,9 @@ export default class MainLayout extends React.Component{
             <div className="App">
               <header>
                 Sample App
-                <div style={{float: "right"}}><a href="/login">Login</a></div>
+                <div style={{float: "right"}}>
+                  <Link to="/login">Login</Link>
+                  </div>
               </header>
               <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
