@@ -8,9 +8,7 @@ import {
   useRouteMatch,
 } from "react-router-dom";
 import "./LoginLayout.css";
-
-import { ToastContainer } from "react-toastr";
-
+import userService from "../../services/userService"
 
 export default class LoginLayout extends React.Component {
   constructor(props) {
@@ -19,6 +17,20 @@ export default class LoginLayout extends React.Component {
     this.props = props;
 
     console.log("LoginLayout.constructor", this.props);
+    console.log("userService", userService, userService.getUsers);
+
+    // var service = new userService();
+    // console.log("service", service, service.getUsers);
+    // console.log("service", service.getUsers);
+
+    // this.users = service.getUsers();
+    // console.log("users", this.users);
+
+    // var service = new userService();
+
+    // let isAuthen = service.isAuthenticate;
+
+    // console.log("userService", service);
 
     // update document title
     document.title = "Login";
