@@ -23,3 +23,28 @@ D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.1\ToDoApp.
 D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.1\ToDoApp.csproj.CopyComplete
 D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.1\ToDoApp.dll
 D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.1\ToDoApp.pdb
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\web.config
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\appsettings.Development.json
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\appsettings.json
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\Properties\launchSettings.json
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\ToDoApp.deps.json
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\ToDoApp.runtimeconfig.json
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\ToDoApp.runtimeconfig.dev.json
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\ToDoApp.dll
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\ToDoApp.pdb
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\ToDoApp.Domain.dll
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\ToDoApp.Service.dll
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\EntityFramework.dll
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\ToDoApp.Domain.pdb
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\ToDoApp.Domain.dll.config
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\ToDoApp.Service.pdb
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.1\EntityFramework.xml
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.1\ToDoApp.csprojAssemblyReference.cache
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.1\ToDoApp.RazorAssemblyInfo.cache
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.1\ToDoApp.RazorAssemblyInfo.cs
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.1\ToDoApp.AssemblyInfoInputs.cache
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.1\ToDoApp.AssemblyInfo.cs
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.1\ToDoApp.RazorTargetAssemblyInfo.cache
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.1\ToDoApp.csproj.CopyComplete
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.1\ToDoApp.dll
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.1\ToDoApp.pdb

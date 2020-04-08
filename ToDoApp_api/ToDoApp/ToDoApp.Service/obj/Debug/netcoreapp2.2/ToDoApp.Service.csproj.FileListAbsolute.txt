@@ -1,3 +1,17 @@
 D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Debug\netcoreapp2.2\ToDoApp.Service.csprojAssemblyReference.cache
 D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Debug\netcoreapp2.2\ToDoApp.Service.AssemblyInfoInputs.cache
 D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Debug\netcoreapp2.2\ToDoApp.Service.AssemblyInfo.cs
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Debug\netcoreapp2.2\ToDoApp.Service.deps.json
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Debug\netcoreapp2.2\ToDoApp.Service.dll
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Debug\netcoreapp2.2\ToDoApp.Service.pdb
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Debug\netcoreapp2.2\ToDoApp.Domain.dll
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Debug\netcoreapp2.2\EntityFramework.dll
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Debug\netcoreapp2.2\ToDoApp.Domain.pdb
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Debug\netcoreapp2.2\ToDoApp.Domain.dll.config
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Debug\netcoreapp2.2\EntityFramework.xml
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Debug\netcoreapp2.2\ToDoApp.Service.csprojAssemblyReference.cache
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Debug\netcoreapp2.2\ToDoApp.Service.AssemblyInfoInputs.cache
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Debug\netcoreapp2.2\ToDoApp.Service.AssemblyInfo.cs
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Debug\netcoreapp2.2\ToDoApp.Service.csproj.CopyComplete
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Debug\netcoreapp2.2\ToDoApp.Service.dll
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Debug\netcoreapp2.2\ToDoApp.Service.pdb
