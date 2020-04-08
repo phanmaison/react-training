@@ -18,6 +18,7 @@ export class Login extends Component {
       array: [],
       idUser: ''
     }
+    this.addDataUser = this.addDataUser.bind(this)
   }
   componentDidMount() {
     debugger

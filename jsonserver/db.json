@@ -32,23 +32,23 @@
       "listdata": [
         {
           "id": "1",
-          "tittle": "Each TODO task has following information: Content (text), Status (Active / Inactive)"
+          "tittle": "Team Vitality Counter-Strike veteran Richard shox Papillon"
         },
         {
           "id": "2",
-          "tittle": "Inactive Tasks will be "
+          "tittle": "said he doesn't believe top players "
         },
         {
           "id": "3",
-          "tittle": "User can Add new TODO task"
+          "tittle": "shox believes lower-ranked players or semi-professionals will look to change games in order to have a competitive advantage over players new to first-person shooters"
         },
         {
           "id": "4",
-          "tittle": "User can Edit TODO task content"
+          "tittle": "It's really hard for them to reach the top"
         },
         {
           "id": "5",
-          "tittle": "User can Delete TODO task"
+          "tittle": "I don't see someone leaving a team like this to go to VALORANT"
         }
       ]
     },
@@ -58,23 +58,23 @@
       "listdata": [
         {
           "id": "1",
-          "tittle": "Each TODO task has following information: Content (text), Status (Active / Inactive)"
+          "tittle": "As a CS pro, I would really love Valve to be more committed"
         },
         {
           "id": "2",
-          "tittle": "Inactive Tasks will be "
+          "tittle": "I don't see it as a competitor to CS. "
         },
         {
           "id": "3",
-          "tittle": "User can Add new TODO task"
+          "tittle": "I won't argue that VALORANT is a Counter-Strike"
         },
         {
           "id": "4",
-          "tittle": "User can Edit TODO task content"
+          "tittle": "The right mindset is in the middle. The ball is in Valve's court. Now it's time for them to react"
         },
         {
           "id": "5",
-          "tittle": "User can Delete TODO task"
+          "tittle": "If anything, Valve will need to tap into Counter-Strike more. Build it. Nurture it. Most importantly, finally invest in it."
         }
       ]
     },
@@ -84,23 +84,23 @@
       "listdata": [
         {
           "id": "1",
-          "tittle": "Each TODO task has following information: Content (text), Status (Active / Inactive)"
+          "tittle": "CHECK IN AT THE NOOK STOP TO EARN NOOK MILES"
         },
         {
           "id": "2",
-          "tittle": "Inactive Tasks will be "
+          "tittle": "FIND THE MONEY ROCK "
         },
         {
           "id": "3",
-          "tittle": "User can Add new TODO task"
+          "tittle": "CHECK YOUR SHOPS"
         },
         {
           "id": "4",
-          "tittle": "User can Edit TODO task content"
+          "tittle": "DIG UP FOSSILS"
         },
         {
           "id": "5",
-          "tittle": "User can Delete TODO task"
+          "tittle": "LOOK FOR MESSAGES IN BOTTLES"
         }
       ]
     },
@@ -110,15 +110,15 @@
       "listdata": [
         {
           "id": "1",
-          "tittle": "Each TODO task has following information: Content (text), Status (Active / Inactive)"
+          "tittle": "TALK TO VISITORS"
         },
         {
           "id": "2",
-          "tittle": "Inactive Tasks will be "
+          "tittle": "COMPLETE YOUR FIRST FIVE NOOK MILES+ GOALS "
         },
         {
           "id": "3",
-          "tittle": "User can Add new TODO task"
+          "tittle": "FARM OUT YOUR RESOURCES FROM ROCKS AND TREES"
         },
         {
           "id": "4",
@@ -126,7 +126,7 @@
         },
         {
           "id": "5",
-          "tittle": "User can Delete TODO task"
+          "tittle": "DONATE 5 FISH OR BUGS TO TOM NOOK FOR STUDY"
         }
       ]
     },
@@ -136,23 +136,23 @@
       "listdata": [
         {
           "id": "1",
-          "tittle": "Each TODO task has following information: Content (text), Status (Active / Inactive)"
+          "tittle": "Handle those errands!"
         },
         {
           "id": "2",
-          "tittle": "Inactive Tasks will be "
+          "tittle": "Get yourself moving "
         },
         {
           "id": "3",
-          "tittle": "User can Add new TODO task"
+          "tittle": "Respect your way of recharging."
         },
         {
           "id": "4",
-          "tittle": "User can Edit TODO task content"
+          "tittle": "Eat well."
         },
         {
           "id": "5",
-          "tittle": "User can Delete TODO task"
+          "tittle": "Prepare for the morning."
         }
       ]
     },
@@ -162,25 +162,30 @@
       "listdata": [
         {
           "id": "1",
-          "tittle": "Each TODO task has following information: Content (text), Status (Active / Inactive)"
+          "tittle": "Take a nap."
         },
         {
           "id": "2",
-          "tittle": "Inactive Tasks will be "
+          "tittle": "Watch your stimulant and alcohol use. "
         },
         {
           "id": "3",
-          "tittle": "User can Add new TODO task"
+          "tittle": " Build in a treat."
         },
         {
           "id": "4",
-          "tittle": "User can Edit TODO task content"
+          "tittle": "Lastly, do what you can to unplug and enjoy the day."
         },
         {
           "id": "5",
-          "tittle": "User can Delete TODO task"
+          "tittle": "Talk to both your villagers "
         }
       ]
+    },
+    {
+      "username": "Hoang Tran",
+      "id": "a23d6077-646b-49e7-a46e-b6ce819d5b0e",
+      "listdata": null
     }
   ]
 }
