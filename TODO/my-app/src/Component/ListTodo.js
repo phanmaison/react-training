@@ -24,15 +24,28 @@ export class ListTodo extends Component {
     if (this.props.allUser.length === 0) { return }
     //chặn xuất 2 lần
     var userId = this.props.match.params.idhandle;
-    var objectFilter = []
+    var objectFilter = [];
+    var checkExisted;
     objectFilter = this.props.allUser.filter(ex => ex.id === userId);
-    console.log(objectFilter[0].listdata);
+    checkExisted = this.props.allUser.some(ex => ex.id === userId);
+    if(!checkExisted){console.log('fail')}
+    if(objectFilter.length === 0){return }
+    if(objectFilter[0].listdata === null){return}
+    // console.log(objectFilter[0].listdata);
     this.props.getObjectlist(objectFilter[0].listdata);
   }
+  // checkListData = ()=>{
+  //   debugger
+  //   if(this.props.listdataob !== undefined){
+  //     this.props.listdataob.map((value, key) => (
+  //       <ValueTitleList key={key} valueTitle={value.tittle}></ValueTitleList>
+  //     ))
+  //   }
+  //   else{ return(<ValueTitleList valueTitle=''></ValueTitleList> )}
+  // }
   render() {
     debugger
     this.getData();
-    // console.log(this.props.listdataob);
     return (
       <table>
         <tbody>
@@ -44,12 +57,14 @@ export class ListTodo extends Component {
             <td>
               <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Add Task" />
             </td>
-            <td><button type="button" className="btn btn-success"><i class="fas fa-plus-square"></i></button></td>
+            <td><button type="button" className="btn btn-secondary"><i className="fas fa-plus"></i></button></td>
           </tr>
           {
+            
             this.props.listdataob.map((value, key) => (
-              <ValueTitleList valueTitle={value.tittle}></ValueTitleList>
+              <ValueTitleList key={key} valueTitle={value.tittle}></ValueTitleList>
             ))
+            // this.checkListData()
           }
         </tbody>
       </table>
