@@ -8,6 +8,10 @@ using ToDoApp.Service.Interfaces;
 
 namespace ToDoApp.Controllers
 {
+    /// <summary>
+    /// Task management
+    /// </summary>
+    /// <seealso cref="Microsoft.AspNetCore.Mvc.ControllerBase" />
     [Route("api/[controller]")]
     [ApiController]
     public class ToDoesController : ControllerBase
@@ -21,6 +25,11 @@ namespace ToDoApp.Controllers
         }
 
         // GET: api/ToDo
+
+        /// <summary>
+        /// Get all tasks
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route("")]
         public async Task<ActionResult<IEnumerable<ToDo>>> Gets()
@@ -33,9 +42,15 @@ namespace ToDoApp.Controllers
                 Count = result.Count
             });
 
-        } 
+        }
 
         // GET: api/ToDo/5
+
+        /// <summary>
+        /// Get tasks by taskId
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<ToDo>> Get(Guid id)
         {
@@ -51,6 +66,11 @@ namespace ToDoApp.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Get tasks by userId
+        /// </summary>
+        /// <param name="userId">The user identifier.</param>
+        /// <returns></returns>
         [HttpGet("gettodobyuserid/{id}")]
         public async Task<ActionResult<IEnumerable<ToDo>>> GetToDoByUserId(string userId)
         {
@@ -71,9 +91,17 @@ namespace ToDoApp.Controllers
             });
             
         }
+
         // PUT: api/ToDoes/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
+
+        /// <summary>
+        /// Update task
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="model">The model.</param>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutToDo(Guid id, ToDo model)
         {
@@ -81,7 +109,7 @@ namespace ToDoApp.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var result = _toDoService.Update(id, model);
+                    var result = await _toDoService.Update(id, model);
                     if (string.IsNullOrEmpty(result.ToString()))
                     {
                         return BadRequest(new FailureModel
@@ -109,6 +137,13 @@ namespace ToDoApp.Controllers
         // POST: api/ToDoes
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
+
+
+        /// <summary>
+        /// Create new task
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult<ToDo>> Post(ToDo model)
         {
@@ -143,6 +178,11 @@ namespace ToDoApp.Controllers
         }
 
         // DELETE: api/ToDoes/5
+        /// <summary>
+        /// Delete task by Id
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<ActionResult<ToDo>> DeleteToDo(Guid id)
         {

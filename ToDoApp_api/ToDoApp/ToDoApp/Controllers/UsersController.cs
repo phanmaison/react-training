@@ -7,6 +7,10 @@ using ToDoApp.Service.Interfaces;
 
 namespace ToDoApp.Controllers
 {
+    /// <summary>
+    /// User management
+    /// </summary>
+    /// <seealso cref="Microsoft.AspNetCore.Mvc.ControllerBase" />
     [Route("api/user")]
     [ApiController]
     public class UsersController : ControllerBase
@@ -17,6 +21,12 @@ namespace ToDoApp.Controllers
         {
             _userService = userService;
         }
+
+
+        /// <summary>
+        /// Get all users
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route("")]
         public async Task<ActionResult> Index()
@@ -25,9 +35,18 @@ namespace ToDoApp.Controllers
             return Ok(userNames);
         }
 
+        // TODO: login user, if user is not exists => create new user
+
+
         // POST: api/Users
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
+
+        /// <summary>
+        /// Create new users
+        /// </summary>
+        /// <param name="user">The user.</param>
+        /// <returns></returns>
         [HttpPost]
         [Route("create")]
         public async Task<ActionResult<User>> Create(UserModel user)

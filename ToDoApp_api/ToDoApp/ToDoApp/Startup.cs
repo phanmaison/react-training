@@ -18,6 +18,8 @@ namespace ToDoApp
 {
     public class Startup
     {
+        private IHostingEnvironment _environment;
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -45,9 +47,10 @@ namespace ToDoApp
                     Title = "ToDo API",
                     Description = "A simple example ASP.NET Core Web API"
                 });
-                //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                //var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                //c.IncludeXmlComments(xmlPath);
+
+                var xmlFile = $"ToDoApp.xml";
+                var xmlPath = Path.Combine(_environment.ContentRootPath, "bin", xmlFile);
+                c.IncludeXmlComments(xmlPath);
 
             });
             
@@ -59,6 +62,8 @@ namespace ToDoApp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            _environment = env;
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
