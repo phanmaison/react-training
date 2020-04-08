@@ -1,0 +1,3 @@
+D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Debug\netcoreapp2.2\ToDoApp.Service.csprojAssemblyReference.cache
+D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Debug\netcoreapp2.2\ToDoApp.Service.AssemblyInfoInputs.cache
+D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Debug\netcoreapp2.2\ToDoApp.Service.AssemblyInfo.cs

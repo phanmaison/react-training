@@ -1,0 +1,75 @@
+Finish seeding data.
+Hosting environment: Development
+Content root path: D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp
+Now listening on: http://localhost:63312/
+Now listening on: https://localhost:44345/
+Application started. Press Ctrl+C to shut down.
+fail: ToDoApp.Middleware.ErrorHandlingMiddleware[0]
+      [DEVLOG] Error happened!, StackTrace detail:    at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.Flatten[TResult](ApplicationModel application, Func`5 flattener)
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorBuilder.Build(ApplicationModel application)
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+         at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+         at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.get_ActionDescriptors()
+         at Microsoft.AspNetCore.Mvc.Routing.AttributeRoute.GetTreeRouter()
+         at Microsoft.AspNetCore.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+         at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+         at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+         at ToDoApp.Middleware.ErrorHandlingMiddleware.Invoke(HttpContext context) in D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp\Middleware\ErrorHandlingMiddleware.cs:line 26
+fail: ToDoApp.Middleware.ErrorHandlingMiddleware[0]
+      [DEVLOG] Error happened!, StackTrace detail:    at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.Flatten[TResult](ApplicationModel application, Func`5 flattener)
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorBuilder.Build(ApplicationModel application)
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+         at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+         at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.get_ActionDescriptors()
+         at Microsoft.AspNetCore.Mvc.Routing.AttributeRoute.GetTreeRouter()
+         at Microsoft.AspNetCore.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+         at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+         at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+         at ToDoApp.Middleware.ErrorHandlingMiddleware.Invoke(HttpContext context) in D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp\Middleware\ErrorHandlingMiddleware.cs:line 26
+fail: ToDoApp.Middleware.ErrorHandlingMiddleware[0]
+      [DEVLOG] Error happened!, StackTrace detail:    at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.Flatten[TResult](ApplicationModel application, Func`5 flattener)
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorBuilder.Build(ApplicationModel application)
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+         at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+         at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.get_ActionDescriptors()
+         at Microsoft.AspNetCore.Mvc.Routing.AttributeRoute.GetTreeRouter()
+         at Microsoft.AspNetCore.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+         at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+         at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+         at ToDoApp.Middleware.ErrorHandlingMiddleware.Invoke(HttpContext context) in D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp\Middleware\ErrorHandlingMiddleware.cs:line 26
+fail: ToDoApp.Middleware.ErrorHandlingMiddleware[0]
+      [DEVLOG] Error happened!, StackTrace detail:    at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.Flatten[TResult](ApplicationModel application, Func`5 flattener)
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorBuilder.Build(ApplicationModel application)
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+         at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+         at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.get_ActionDescriptors()
+         at Microsoft.AspNetCore.Mvc.Routing.AttributeRoute.GetTreeRouter()
+         at Microsoft.AspNetCore.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+         at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+         at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+         at ToDoApp.Middleware.ErrorHandlingMiddleware.Invoke(HttpContext context) in D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp\Middleware\ErrorHandlingMiddleware.cs:line 26
+fail: ToDoApp.Middleware.ErrorHandlingMiddleware[0]
+      [DEVLOG] Error happened!, StackTrace detail:    at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.Flatten[TResult](ApplicationModel application, Func`5 flattener)
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorBuilder.Build(ApplicationModel application)
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+         at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+         at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.get_ActionDescriptors()
+         at Microsoft.AspNetCore.Mvc.Routing.AttributeRoute.GetTreeRouter()
+         at Microsoft.AspNetCore.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+         at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+         at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+         at ToDoApp.Middleware.ErrorHandlingMiddleware.Invoke(HttpContext context) in D:\React_Training\ToDoApp_api\ToDoApp\ToDoApp\Middleware\ErrorHandlingMiddleware.cs:line 26
+fail: ToDoApp.Middleware.ErrorHandlingMiddleware[0]
+      [DEVLOG] Error happened!, StackTrace detail:    at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.Flatten[TResult](ApplicationModel application, Func`5 flattener)
+         at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorBuilder.Build(ApplicationModel application)
+         at Microsoft.AspNetCore.Mvc.ApplicationMo
