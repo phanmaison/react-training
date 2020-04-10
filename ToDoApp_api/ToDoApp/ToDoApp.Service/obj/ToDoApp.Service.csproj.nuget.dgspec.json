@@ -9,7 +9,14 @@
       "restore": {
         "projectUniqueName": "D:\\New folder\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Domain\\ToDoApp.Domain.csproj",
         "projectName": "ToDoApp.Domain",
-        "projectPath": "D:\\New folder\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Domain\\ToDoApp.Domain.csproj"
+        "projectPath": "D:\\New folder\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Domain\\ToDoApp.Domain.csproj",
+        "projectStyle": "PackagesConfig",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "packagesConfigPath": "D:\\New folder\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Domain\\packages.config"
       },
       "frameworks": {
         "net472": {}

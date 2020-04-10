@@ -122,3 +122,4 @@ D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Domain\obj\Debug\ToDoAp
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Domain\obj\Debug\ToDoApp.Domain.csproj.CopyComplete
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Domain\obj\Debug\ToDoApp.Domain.dll
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Domain\obj\Debug\ToDoApp.Domain.pdb
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Domain\obj\Debug\ToDoApp.Domain.csprojAssemblyReference.cache

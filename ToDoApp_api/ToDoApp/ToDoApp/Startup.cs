@@ -53,9 +53,9 @@ namespace ToDoApp
                     Description = "A simple example ASP.NET Core Web API"
                 });
 
-                var xmlFile = $"ToDoApp.xml";
-                var xmlPath = Path.Combine(_environment.ContentRootPath, "bin", xmlFile);
-                c.IncludeXmlComments(xmlPath);
+                //var xmlFile = $"ToDoApp.xml";
+                //var xmlPath = Path.Combine(_environment.ContentRootPath, "bin", xmlFile);
+                //c.IncludeXmlComments(xmlPath);
 
             });
 
