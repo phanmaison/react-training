@@ -1,15 +1,27 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import ValueTitleList from './ValueTitleList'
+import ValueTitleList from './ValueTitleList';
+import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios';
 export class ListTodo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      todoListshow: []
+      // todoListshow: []
+      id:'',
+      userid:'',
+      todo:''
     }
   }
-
+  isChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    this.setState({
+      [name]: value
+    })
+    console.log(name);
+    console.log(value)
+  }
   componentDidMount() {
     debugger
     axios.get('http://localhost:3000/user')
@@ -36,23 +48,27 @@ export class ListTodo extends Component {
         var listDataObject = [];
         listDataObject = response.data.filter(ex => ex.userid === userId);
         this.props.getObjectlist(listDataObject);
-        return 
+        return
       })
       .catch(error => console.log(error))
-      return 
+    return
     // this.props.getObjectlist(objectFilter[0].listdata);
   }
-  // checkListData = ()=>{
-  //   debugger
-  //   if(this.props.listdataob !== undefined){
-  //     this.props.listdataob.map((value, key) => (
-  //       <ValueTitleList key={key} valueTitle={value.tittle}></ValueTitleList>
-  //     ))
-  //   }
-  //   else{ return(<ValueTitleList valueTitle=''></ValueTitleList> )}
-  // }
+  getInputAdd = (todo) => {
+    var userId = this.props.match.params.idhandle;
+    const todoItem = {};
+    todoItem.id = uuidv4();
+    todoItem.userid = userId;
+    todoItem.todo = todo;
+    console.log(todoItem);
+    axios.post(`http://localhost:3000/listtodo`, todoItem)
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      })
+  }
   render() {
-    {this.getData();}
+    { this.getData(); }
     return (
       <table>
         <tbody>
@@ -62,16 +78,23 @@ export class ListTodo extends Component {
           </tr>
           <tr>
             <td>
-              <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Add Task" />
+              <input
+                name='todotask'
+                type="email"
+                className="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Add Task"
+                onChange={(event) => this.isChange(event)}
+              />
             </td>
-            <td><button type="button" className="btn btn-secondary"><i className="fas fa-plus"></i></button></td>
+            <td><button type="reset" className="btn btn-info" onClick={() => this.getInputAdd(this.state.todotask)}><i className="fas fa-plus"></i></button></td>
           </tr>
           {
 
             this.props.listdataob.map((value, key) => (
               <ValueTitleList key={key} valueTitle={value.todo}></ValueTitleList>
             ))
-            // this.checkListData()
           }
         </tbody>
       </table>
