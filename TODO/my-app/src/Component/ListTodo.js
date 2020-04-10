@@ -19,7 +19,6 @@ export class ListTodo extends Component {
       .catch(error => console.log(error))
   }
   getData = () => {
-    debugger
     // vong lap chay 2 lan neu khong return se bị lỗi khi get property objectFilter[0].listdata
     if (this.props.allUser.length === 0) { return }
     //chặn xuất 2 lần
@@ -28,11 +27,20 @@ export class ListTodo extends Component {
     var checkExisted;
     objectFilter = this.props.allUser.filter(ex => ex.id === userId);
     checkExisted = this.props.allUser.some(ex => ex.id === userId);
-    if(!checkExisted){console.log('fail')}
-    if(objectFilter.length === 0){return }
-    if(objectFilter[0].listdata === null){return}
+    if (!checkExisted) { console.log('fail') }
+    if (objectFilter.length === 0) { return }
+    if (objectFilter[0].listdata === null) { return }
     // console.log(objectFilter[0].listdata);
-    this.props.getObjectlist(objectFilter[0].listdata);
+    axios.get('http://localhost:3000/listtodo')
+      .then(response => {
+        var listDataObject = [];
+        listDataObject = response.data.filter(ex => ex.userid === userId);
+        this.props.getObjectlist(listDataObject);
+        return 
+      })
+      .catch(error => console.log(error))
+      return 
+    // this.props.getObjectlist(objectFilter[0].listdata);
   }
   // checkListData = ()=>{
   //   debugger
@@ -44,8 +52,7 @@ export class ListTodo extends Component {
   //   else{ return(<ValueTitleList valueTitle=''></ValueTitleList> )}
   // }
   render() {
-    debugger
-    this.getData();
+    {this.getData();}
     return (
       <table>
         <tbody>
@@ -60,9 +67,9 @@ export class ListTodo extends Component {
             <td><button type="button" className="btn btn-secondary"><i className="fas fa-plus"></i></button></td>
           </tr>
           {
-            
+
             this.props.listdataob.map((value, key) => (
-              <ValueTitleList key={key} valueTitle={value.tittle}></ValueTitleList>
+              <ValueTitleList key={key} valueTitle={value.todo}></ValueTitleList>
             ))
             // this.checkListData()
           }
