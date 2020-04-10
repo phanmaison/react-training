@@ -7,6 +7,7 @@ D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Debug\netcoreapp2.2
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Debug\netcoreapp2.2\ToDoApp.runtimeconfig.dev.json
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Debug\netcoreapp2.2\ToDoApp.dll
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Debug\netcoreapp2.2\ToDoApp.pdb
+D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Debug\netcoreapp2.2\ToDoApp.xml
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Debug\netcoreapp2.2\ToDoApp.Domain.dll
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Debug\netcoreapp2.2\ToDoApp.Service.dll
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Debug\netcoreapp2.2\EntityFramework.dll
@@ -23,4 +24,3 @@ D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Debug\netcoreapp2.2
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Debug\netcoreapp2.2\ToDoApp.csproj.CopyComplete
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Debug\netcoreapp2.2\ToDoApp.dll
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Debug\netcoreapp2.2\ToDoApp.pdb
-D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Debug\netcoreapp2.2\ToDoApp.xml

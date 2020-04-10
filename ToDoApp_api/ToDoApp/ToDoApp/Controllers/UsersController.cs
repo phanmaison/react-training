@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using ToDoApp.Domain.Entity;
@@ -31,11 +32,11 @@ namespace ToDoApp.Controllers
         [Route("")]
         public async Task<ActionResult> Index()
         {
-            var userNames = await _userService.GetUserNames();
+            var userNames = await _userService.GetAll();
             return Ok(userNames);
         }
 
-        // TODO: login user, if user is not exists => create new user
+        
 
 
         // POST: api/Users

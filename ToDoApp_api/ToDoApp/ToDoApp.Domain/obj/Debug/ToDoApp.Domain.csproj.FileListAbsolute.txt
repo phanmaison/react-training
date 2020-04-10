@@ -116,7 +116,6 @@ D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Domain\bin\Debug\System
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Domain\bin\Debug\System.Numerics.Vectors.xml
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Domain\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Domain\bin\Debug\System.Threading.Tasks.Extensions.xml
-D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Domain\obj\Debug\ToDoApp.Domain.csprojAssemblyReference.cache
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Domain\obj\Debug\ToDoApp.Domain.Migrations.InitDatabase.resources
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Domain\obj\Debug\ToDoApp.Domain.Migrations.UpdateTableToDo.resources
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Domain\obj\Debug\ToDoApp.Domain.csproj.GenerateResource.cache

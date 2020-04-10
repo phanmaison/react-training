@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoApp", "ToDoApp\ToDoApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoApp.Domain", "ToDoApp.Domain\ToDoApp.Domain.csproj", "{87876295-BB36-4847-9BEC-459B5560634B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoApp.Service", "ToDoApp.Service\ToDoApp.Service.csproj", "{E3EE2033-BB0D-48E2-A2B5-9E5EB6979067}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoApp.Service", "ToDoApp.Service\ToDoApp.Service.csproj", "{E3EE2033-BB0D-48E2-A2B5-9E5EB6979067}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

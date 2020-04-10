@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ToDoApp.Domain;
@@ -21,11 +22,11 @@ namespace ToDoApp.Service.Implements
             return await _dbContext.Users.AnyAsync(x => x.UserName == userName);
         }
 
-        public async Task<Guid> Create(User entity)
+        public async Task<User> Create(User entity)
         {
             _dbContext.Users.Add(entity);
             await _dbContext.SaveChangesAsync();
-            return entity.Id;
+            return entity;
         }
 
         public async Task<User> Get(string userName)
@@ -34,15 +35,21 @@ namespace ToDoApp.Service.Implements
             return user;
         }
 
-        public Task<string[]> GetTaskList(string userName)
+        public async Task<List<User>> GetAll()
         {
-            throw new NotImplementedException();
+            return await _dbContext.Users.ToListAsync();
         }
 
-        public async Task<string[]> GetUserNames()
+        public async Task<User> Login(string userName, string password)
         {
-            return await _dbContext.Users.AsNoTracking().Select(x => x.UserName).ToArrayAsync();
+            var user =  _dbContext.Users.SingleOrDefault(x => x.UserName == userName);           
+            if (user.Password == password)
+                return user;
+            else
+                return null;
         }
+
+        
     }
 
 }

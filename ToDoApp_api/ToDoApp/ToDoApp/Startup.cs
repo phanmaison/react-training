@@ -13,6 +13,7 @@ using ToDoApp.Middleware;
 using ToDoApp.Service.Implements;
 using ToDoApp.Service.Interfaces;
 using Newtonsoft.Json.Serialization;
+using System.Text;
 
 namespace ToDoApp
 {
@@ -39,6 +40,10 @@ namespace ToDoApp
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
                 .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver());
 
+            services.AddSession(options => {
+                options.IdleTimeout = TimeSpan.FromMinutes(60);//You can set Time
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
@@ -53,7 +58,7 @@ namespace ToDoApp
                 c.IncludeXmlComments(xmlPath);
 
             });
-            
+
             //Register services
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IToDoService, ToDoService>();
@@ -75,6 +80,7 @@ namespace ToDoApp
 
             app.UseHttpsRedirection();
             app.UseMiddleware(typeof(ErrorHandlingMiddleware));
+            app.UseSession();
             app.UseMvc();
             app.UseSwagger();
             app.UseSwaggerUI(c =>
