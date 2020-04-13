@@ -29,7 +29,7 @@ class Form extends React.Component {
           <h3>Add new task</h3>
           <form>
             <input id="formInput"/>
-            <button onClick={this.submit}>{this.props.idEdit ? 'Edit' : 'Add'}</button>
+            <button onClick={() => this.submit()}>{this.props.idEdit ? 'Edit' : 'Add'}</button>
           </form>
         </div>
       );

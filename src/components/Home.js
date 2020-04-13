@@ -45,7 +45,7 @@ class Home extends React.Component {
   }
   deleteItem(id) {
     let items = this.state.items.filter(item => {
-      return item.id != id;
+      return item.id !== id;
     });
     const total = items.length;
     this.setState({
@@ -65,7 +65,7 @@ class Home extends React.Component {
   }
   updateItem(id, content) {
     let items = this.state.items.map(item => {
-      if (item.id == id) {
+      if (item.id === id) {
         item.content = content;
       }
       return item;
@@ -83,6 +83,7 @@ class Home extends React.Component {
     return (
       <div>
         <Menu />
+        <h3>Hello {this.props.userId}</h3>
         <Form updateAppState={this.updateState} idEdit={this.state.idEdit} updateItem={this.updateItem} />
         <List items={this.state.items} deleteItem={this.deleteItem} showEditForm={this.showEditForm} />
       </div>
