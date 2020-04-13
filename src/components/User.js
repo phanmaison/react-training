@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Axios from 'axios';
+
 import Menu from './Menu';
+import {USER_LIST} from '../constants';
 
 class User extends React.Component {
   constructor() {
@@ -18,10 +20,9 @@ class User extends React.Component {
     }
   }
   componentDidMount() {
-    Axios.get('http://demo-todo-app.somee.com/api/user', {crossdomain: true})
-      .then(res => {
-        const users = res.data;
-        debugger
+    Axios.get(USER_LIST, {crossdomain: true})
+      .then(response => {
+        const users = response.data;
         this.setState({
           users
         });

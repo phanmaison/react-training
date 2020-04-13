@@ -83,7 +83,7 @@ class Home extends React.Component {
     return (
       <div>
         <Menu />
-        <h3>Hello {this.props.userId}</h3>
+        <h3>Hello {this.props.userId}, <a href="#logout" onClick={() => this.props.logout()}>logout</a></h3>
         <Form updateAppState={this.updateState} idEdit={this.state.idEdit} updateItem={this.updateItem} />
         <List items={this.state.items} deleteItem={this.deleteItem} showEditForm={this.showEditForm} />
       </div>
