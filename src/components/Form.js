@@ -1,4 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
+import { addItem } from '../redux/actions';
+
 class Form extends React.Component {
     constructor(props) {
       super(props);
@@ -17,7 +21,7 @@ class Form extends React.Component {
           content: content,
           status: 1
         };
-        this.props.updateAppState(item);
+        this.props.addItem(item);
       }
 
       formInput.value = '';
@@ -29,11 +33,17 @@ class Form extends React.Component {
           <h3>Add new task</h3>
           <form>
             <input id="formInput"/>
-            <button onClick={() => this.submit()}>{this.props.idEdit ? 'Edit' : 'Add'}</button>
+            <button onClick={(e) => this.submit(e)}>{this.props.idEdit ? 'Edit' : 'Add'}</button>
           </form>
         </div>
       );
     }
 }
 
-export default Form;
+const mapState = (state) => {
+  return {
+    isEdit: state.isEdit
+  }
+};
+
+export default connect(mapState, { addItem })(Form);

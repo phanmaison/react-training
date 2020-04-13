@@ -1,6 +1,10 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
+import { deleteItem } from '../redux/actions';
 
 class List extends React.Component {
+  
   delete(id) {
     if (window.confirm('Do you want to delete?')) {
       this.props.deleteItem(id);
@@ -38,4 +42,10 @@ class List extends React.Component {
   }
 }
 
-export default List;
+const mapState = (state) => {
+  return {
+    items: state.userItems
+  };
+};
+
+export default connect(mapState, { deleteItem })(List);

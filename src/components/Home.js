@@ -1,38 +1,12 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
 import Form from './Form';
 import List from './List';
 import Menu from './Menu';
+import { logoutAction } from '../redux/actions';
 
 class Home extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      items: [
-          {
-              id: 1,
-              content: "task item a",
-              status: 1
-          },
-          {
-              id: 2,
-              content: "text item b",
-              status: 1
-          },
-          {
-              id: 3,
-              content: "text item c",
-              status: 1
-          }
-      ],
-      total: 3,
-      idEdit: 0
-    };
-
-    this.updateState = this.updateState.bind(this);
-    this.deleteItem = this.deleteItem.bind(this);
-    this.showEditForm = this.showEditForm.bind(this);
-    this.updateItem = this.updateItem.bind(this);
-  }
   updateState(item) {
     let total = this.state.total;
     item.id = ++total;
@@ -41,16 +15,6 @@ class Home extends React.Component {
         items: [...state.items, item],
         total: total
       }
-    });
-  }
-  deleteItem(id) {
-    let items = this.state.items.filter(item => {
-      return item.id !== id;
-    });
-    const total = items.length;
-    this.setState({
-      items: items,
-      total: total
     });
   }
   showEditForm(item) {
@@ -83,12 +47,16 @@ class Home extends React.Component {
     return (
       <div>
         <Menu />
-        <h3>Hello {this.props.userId}, <a href="#logout" onClick={() => this.props.logout()}>logout</a></h3>
-        <Form updateAppState={this.updateState} idEdit={this.state.idEdit} updateItem={this.updateItem} />
-        <List items={this.state.items} deleteItem={this.deleteItem} showEditForm={this.showEditForm} />
+        <h3>Hello {this.props.userId}, <a href="#logout" onClick={() => this.props.logoutAction()}>logout</a></h3>
+        <Form />
+        <List />
       </div>
     );
   }
 }
 
-export default Home;
+const mapState = state => ({
+  userId: state.userId
+});
+
+export default connect(mapState, { logoutAction })(Home);

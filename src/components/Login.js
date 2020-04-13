@@ -1,11 +1,13 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import {loginAction} from '../redux/actions'
 
 class Login extends React.Component {
   onSubmit(event) {
     event.preventDefault();
 
     const userId = document.getElementById('userId').value;
-    this.props.login(userId);
+    this.props.loginAction(userId);
   }
   render() {
     return (
@@ -20,4 +22,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default connect(null, {loginAction})(Login);
