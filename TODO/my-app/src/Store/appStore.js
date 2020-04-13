@@ -2,7 +2,8 @@ var redux = require('redux');
 const allStore = {
     storeId: {},
     dataJSON:[],
-    objectList:[]
+    objectList:[],
+    edit:[]
 }
 const allReducer = (state = allStore, action) => {
     switch (action.type) {
@@ -12,6 +13,8 @@ const allReducer = (state = allStore, action) => {
             return {...state, dataJSON:action.data};
         case "GET_OBJECT_LIST":
             return {...state, objectList: action.myObject};
+        case "GET_OBJECT_EDIT":
+            return {...state,edit: action.valueedit}
         default:
             return state;
     }

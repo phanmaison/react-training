@@ -304,3 +304,23 @@ th {
   background-color: #7691ab;
   color: white;
 }
+.btn-edittodo{
+	margin-left: 50px;
+}
+.content-edittodo{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 100%;
+}
+.content-edittodo input{
+	width: 100%;
+}
+.footer-edittodo{
+	float: right;
+}
+.header-edittodo{
+	font-family: 'Comic Neue', cursive;
+}
+.content-titles{
+	font-family: 'Bitter', serif;
+}

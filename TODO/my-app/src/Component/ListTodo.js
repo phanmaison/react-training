@@ -75,6 +75,7 @@ export class ListTodo extends Component {
           <tr>
             <th>User-Main Page: <b>Your Main</b></th>
             <th>Users: <b>Songuku</b></th>
+            <th></th>
           </tr>
           <tr>
             <td>
