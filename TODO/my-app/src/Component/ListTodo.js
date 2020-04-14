@@ -3,14 +3,18 @@ import { connect } from 'react-redux';
 import ValueTitleList from './ValueTitleList';
 import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios';
+import Modal from 'react-modal';
+import ListUsername from './ListUsername';
 export class ListTodo extends Component {
   constructor(props) {
     super(props);
     this.state = {
       // todoListshow: []
-      id:'',
-      userid:'',
-      todo:''
+      id: '',
+      userid: '',
+      todo: '',
+      checkShowAllUser: false,
+      checklist:true
     }
   }
   isChange = (event) => {
@@ -23,7 +27,6 @@ export class ListTodo extends Component {
     console.log(value)
   }
   componentDidMount() {
-    debugger
     axios.get('http://localhost:3000/user')
       .then(response => {
         this.props.dataAllJSON(response.data);
@@ -38,10 +41,11 @@ export class ListTodo extends Component {
     var objectFilter = [];
     var checkExisted;
     objectFilter = this.props.allUser.filter(ex => ex.id === userId);
+    this.props.getUsersetclient(objectFilter[0].username)
     checkExisted = this.props.allUser.some(ex => ex.id === userId);
     if (!checkExisted) { console.log('fail') }
     if (objectFilter.length === 0) { return }
-    if (objectFilter[0].listdata === null) { return }
+    // if (objectFilter[0].listdata === null) { return }
     // console.log(objectFilter[0].listdata);
     axios.get('http://localhost:3000/listtodo')
       .then(response => {
@@ -67,18 +71,34 @@ export class ListTodo extends Component {
         console.log(res.data);
       })
   }
+  allUser = () => {
+    this.setState({
+      checkShowAllUser: !this.state.checkShowAllUser
+    })
+  }
+  cancel = () => {
+    this.setState({
+      checkShowAllUser: !this.state.checkShowAllUser
+    })
+  }
+  mytitle = () => {
+    return this.props.myuserTitle;
+  }
+  checkFunction = (id)=>{
+    alert(id)
+  }
   render() {
     { this.getData(); }
     return (
       <table>
         <tbody>
           <tr>
-            <th>User-Main Page: <b>Your Main</b></th>
-            <th>Users: <b>Songuku</b></th>
-            <th></th>
+            <th className="text-decoration">User-Main Page: <b>{this.mytitle()}</b></th>
+            <th className="text-decoration" >Users: <b>{this.mytitle()}</b></th>
+            <th><a href="http://localhost:3001/"><i className="far fa-times-circle"></i></a></th>
           </tr>
           <tr>
-            <td>
+            <td className="btn-group">
               <input
                 name='todotask'
                 type="email"
@@ -88,13 +108,64 @@ export class ListTodo extends Component {
                 placeholder="Add Task"
                 onChange={(event) => this.isChange(event)}
               />
+              <button type="reset" className="btn btn-info" onClick={() => this.getInputAdd(this.state.todotask)}><i className="fas fa-plus"></i></button>
             </td>
-            <td><button type="reset" className="btn btn-info" onClick={() => this.getInputAdd(this.state.todotask)}><i className="fas fa-plus"></i></button></td>
+            {/* <td>
+              <button type="reset" className="btn btn-info" onClick={() => this.getInputAdd(this.state.todotask)}><i className="fas fa-plus"></i></button>
+
+            </td> */}
+            {/* get list user */}
+            <td>
+              <button className="btn btn-outline-dark" onClick={() => this.allUser()}><i class="fas fa-users"></i></button>
+            </td>
+            {/* get list user */}
+          </tr>
+          <tr>
+            <Modal isOpen={this.state.checkShowAllUser}>
+              {/* List user is doing */}
+              <div className="row">
+                <div className="col-sm-11 col-12">
+                  <h3 className="user-list">User List</h3>
+                </div>
+                <div className="col-sm-1 col-12">
+                  <button className="btn btn-outline-dark redirectomain" onClick={() => this.cancel()}><i className="fas fa-list"></i></button>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-sm-7 col-12">
+                  <table className="table table-borderless table-dark ">
+                    <thead>
+                      <tr>
+                        <th className='titleoflistuser' scope="col">Get Id User And Get List Todo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        {
+                          this.props.allUser.map((value,key)=>(
+                            <ListUsername key={key} usernameslot={value.username}></ListUsername>
+                          ))
+                        }
+                        {/* <ListUsername></ListUsername> */}
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+              {/* List user is doing */}
+            </Modal>
           </tr>
           {
 
             this.props.listdataob.map((value, key) => (
-              <ValueTitleList key={key} valueTitle={value.todo}></ValueTitleList>
+              <ValueTitleList key={key} valueTitle={value.todo} classname={this.state.checklist === true ? '': 'sort_selected'} clickToolbar = {(event)=>{
+                switch(this.state.checklist){
+                  case true:
+                     this.checkFunction(value.id); 
+                    break
+                }
+              }}></ValueTitleList>
             ))
           }
         </tbody>
@@ -106,7 +177,8 @@ const mapStateToProps = (state, ownProps) => {
   return {
     usernameId: state.storeId,
     allUser: state.dataJSON,
-    listdataob: state.objectList
+    listdataob: state.objectList,
+    myuserTitle: state.name
   }
 }
 const mapDispatchToProps = (dispatch, ownProps) => {
@@ -119,6 +191,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     },
     getObjectlist: (myObject) => {
       dispatch({ type: "GET_OBJECT_LIST", myObject })
+    },
+    getUsersetclient: (useroftitles) => {
+      dispatch({ type: "GET_NAME_USER", useroftitles })
     }
   }
 }

@@ -9,14 +9,14 @@ export class ValueTitleList extends Component {
     super(props);
     this.state = {
       showPopup: false,
-      contenttodo:''
+      contenttodo: ''
     }
   }
-  isChange = (event)=>{
+  isChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
     this.setState({
-      [name]:value
+      [name]: value
     })
     console.log(name);
     console.log(value);
@@ -39,46 +39,50 @@ export class ValueTitleList extends Component {
     this.props.getEdit(myTitle);
     console.log(myTitle)
     this.setState({
-      showPopup:!this.state.showPopup,
-      contenttodo:myTitle[0].todo
+      showPopup: !this.state.showPopup,
+      contenttodo: myTitle[0].todo
     })
   }
-  eventClickSave = (editTodo)=>{
+  eventClickSave = (editTodo) => {
     console.log(this.props.editvalue);
     const editData = {};
     editData.id = this.props.editvalue[0].id;
     editData.userid = this.props.editvalue[0].userid;
     editData.todo = editTodo;
-    axios.put('http://localhost:3000/listtodo/'+this.props.editvalue[0].id, editData)
-    .then((data)=>{
-      console.log(data);
-    })
-    .catch((err)=>{
-      console.log(err);
-    })
+    axios.put('http://localhost:3000/listtodo/' + this.props.editvalue[0].id, editData)
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
     //gia tri sau khi edit
     console.log('123');
     console.log(editData);
     this.eventClickEdit();
   }
+  clickToolbar() {
+    debugger
+    this.props.selectedRow(this.props.prd);
+  }
   render() {
     return (
       <tr>
-        <td className="content-titles">{this.props.valueTitle}</td>
+        <td className={this.props.classname} onClick={(e) => { this.props.clickToolbar(this) }}>{this.props.valueTitle}</td>
         <td className="btn-group">
           <button type="button" className="btn btn-danger" onClick={() => this.eventClickDelete()} ><i className="fas fa-trash-alt" /></button>
-          <button type="button" className="btn btn-warning" onClick={() => this.eventClickEdit()}><i class="fas fa-user-edit"></i></button>
+          <button type="button" className="btn btn-warning" onClick={() => this.eventClickEdit()}><i className="fas fa-user-edit"></i></button>
         </td>
         <td>
           <Modal isOpen={this.state.showPopup}>
-              <h3 className="header-edittodo">Edit Todo</h3>
-              <div className="content-edittodo">
-                  <input name="editTodo" onChange={(event)=>this.isChange(event)} defaultValue={this.state.contenttodo} type="text" className="input username" placeholder="Username" />
-              </div>
-              <div className="footer-edittodo">
-                <Button className="btn btn-secondary " onClick={() => this.eventClickEdit()}>Close</Button>
-                <Button className="btn btn-primary btn-edittodo" onClick={() => this.eventClickSave(this.state.editTodo)}>Save</Button>
-              </div>
+            <h3 className="header-edittodo">Edit Todo</h3>
+            <div className="content-edittodo">
+              <input name="editTodo" onChange={(event) => this.isChange(event)} defaultValue={this.state.contenttodo} type="text" className="input username" placeholder="Username" />
+            </div>
+            <div className="footer-edittodo">
+              <Button className="btn btn-secondary " onClick={() => this.eventClickEdit()}>Close</Button>
+              <Button className="btn btn-primary btn-edittodo" onClick={() => this.eventClickSave(this.state.editTodo)}>Save</Button>
+            </div>
           </Modal>
         </td>
       </tr>
@@ -104,8 +108,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     getObjectlist: (myObject) => {
       dispatch({ type: "GET_OBJECT_LIST", myObject })
     },
-    getEdit:(valueedit)=>{
-      dispatch({type:"GET_OBJECT_EDIT",valueedit})
+    getEdit: (valueedit) => {
+      dispatch({ type: "GET_OBJECT_EDIT", valueedit })
     }
   }
 }

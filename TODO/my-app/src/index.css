@@ -305,7 +305,7 @@ th {
   color: white;
 }
 .btn-edittodo{
-	margin-left: 50px;
+	margin-left: 10px;
 }
 .content-edittodo{
 	margin-top: 50px;
@@ -318,9 +318,47 @@ th {
 .footer-edittodo{
 	float: right;
 }
-.header-edittodo{
+.header-edittodo, .user-list{
 	font-family: 'Comic Neue', cursive;
 }
 .content-titles{
 	font-family: 'Bitter', serif;
+}
+.text-decoration b{
+	font-family: 'Comic Neue', cursive;
+}
+.redirectomain, .canceluserlist{
+	width: 100%;
+}
+.my-tableusername{
+	font-family: 'Baloo Paaji 2', cursive;
+	font-size: 15px;
+}
+.fa-times-circle{
+	font-size: 20px;
+	margin-left: 20px;
+	color: red;
+}
+td a.user_list{
+	font-family: 'Baloo Paaji 2', cursive;
+	font-size: 25px;
+	color: greenyellow;
+	text-decoration: none;
+}
+td a.user_list:hover{
+	color:goldenrod
+}
+.text-decoration{
+	font-family: 'Baloo Paaji 2', cursive;
+	font-size: 15px;
+}
+th.titleoflistuser{
+	font-size: 30px;
+	font-family: 'Baloo Paaji 2', cursive;
+}
+.sort_selected {
+	border-bottom: solid;
+    display: inline-block;
+    height: 11px;
+    padding: 0px 33px;
 }
