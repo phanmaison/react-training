@@ -1,26 +1,17 @@
 import { createStore } from 'redux';
-import { LOGIN, LOGOUT, ADD_ITEM, DELETE_ITEM } from './actionTypes';
+import { LOGIN, LOGOUT, ADD_ITEM, DELETE_ITEM, EDIT_ITEM, DO_EDIT_ITEM } from './actionTypes';
 
 const initialState = {
   userId: 0,
-  userItems: [
+  userItems: [],
+  editId: 0,
+  users: [
     {
-        id: 1,
-        content: "task item a",
-        status: 1
-    },
-    {
-        id: 2,
-        content: "text item b",
-        status: 1
-    },
-    {
-        id: 3,
-        content: "text item c",
-        status: 1
+      id: 1,
+      email: 'asdf@gmail.com',
+      total: 1
     }
-  ],
-  isEdit: false
+  ]
 };
 
 const reducer = (state = initialState, action) => {
@@ -38,19 +29,42 @@ const reducer = (state = initialState, action) => {
       }
     }
     case ADD_ITEM: {
+      const total = state.userItems.length;
+      const item = action.item;
+      item.id = total + 1;
       return {
         ...state,
-        userItems: [...state.userItems, action.item]
+        userItems: [...state.userItems, item]
       }
     }
     case DELETE_ITEM: {
-      let items = this.state.userItems.filter(item => {
+      let items = state.userItems.filter(item => {
         return item.id !== action.id;
       });
 
       return {
         ...state,
         userItems: items
+      };
+    }
+    case EDIT_ITEM: {
+      return {
+        ...state,
+        editId: action.id
+      };
+    }
+    case DO_EDIT_ITEM: {
+      const items = state.userItems.map(item => {
+        if (item.id === action.id ) {
+          item.content = action.content;
+        }
+        return item;
+      });
+
+      return {
+        ...state,
+        userItems: items,
+        editId: 0
       };
     }
     default:

@@ -1,36 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Axios from 'axios';
+import { connect } from 'react-redux';
 
 import Menu from './Menu';
 import {USER_LIST} from '../constants';
 
 class User extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {
-      users: [
-        {
-          id: 1,
-          email: 'asdf@gmail.com',
-          total: 1
-        }
-      ]
-    }
-  }
   componentDidMount() {
     Axios.get(USER_LIST, {crossdomain: true})
       .then(response => {
         const users = response.data;
-        this.setState({
-          users
-        });
+        console.log(users);
       })
       .catch(error => console.log(error));
   }
   render() {
-    const users = this.state.users.map(user => (
+    const users = this.props.users.map(user => (
         <tr key={user.id}>
           <td><Link to="/">{user.email}</Link></td>
           <td>{user.total}</td>
@@ -54,4 +40,10 @@ class User extends React.Component {
   }
 }
 
-export default User;
+const mapState = (state) => {
+  return {
+    users: state.users
+  };
+};
+
+export default connect(mapState)(User);

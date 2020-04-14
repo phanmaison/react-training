@@ -1,17 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { deleteItem } from '../redux/actions';
+import { deleteItem, updateItem } from '../redux/actions';
 
 class List extends React.Component {
-  
   delete(id) {
     if (window.confirm('Do you want to delete?')) {
       this.props.deleteItem(id);
     }
-  }
-  update(item) {
-    this.props.showEditForm(item);
   }
   render() {
     const items = this.props.items.map(item => {
@@ -19,7 +15,7 @@ class List extends React.Component {
         <tr key={item.id}>
           <td>{item.content}</td>
           <td>
-            <a onClick={() => this.update(item)} href="#edit">edit</a>
+            <a onClick={() => this.props.updateItem(item)} href="#edit">edit</a>
             <a onClick={() => this.delete(item.id)} href="#delete">delete</a>
           </td>
         </tr>
@@ -48,4 +44,4 @@ const mapState = (state) => {
   };
 };
 
-export default connect(mapState, { deleteItem })(List);
+export default connect(mapState, { deleteItem, updateItem })(List);

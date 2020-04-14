@@ -1,4 +1,4 @@
-import { LOGIN, LOGOUT, ADD_ITEM, DELETE_ITEM } from './actionTypes';
+import { LOGIN, LOGOUT, ADD_ITEM, DELETE_ITEM, EDIT_ITEM, DO_EDIT_ITEM } from './actionTypes';
 import { Cookies } from 'react-cookie';
 
 export const loginAction = (userId) => {
@@ -36,5 +36,21 @@ export const deleteItem = (id) => {
   return {
     type: DELETE_ITEM,
     id
+  };
+}
+
+export const updateItem = (item) => {
+  document.getElementById('formInput').value = item.content;
+  return {
+    type: EDIT_ITEM,
+    id: item.id
+  };
+}
+
+export const doUpdateItem = (id, content) => {
+  return {
+    type: DO_EDIT_ITEM,
+    id,
+    content
   };
 }
