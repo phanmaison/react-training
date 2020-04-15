@@ -77,7 +77,7 @@ export class Login extends Component {
         console.log(response.data)
       })
       .catch(error => console.log(error))
-    console.log(this.state.array) 
+    console.log(this.state.array) ;
   }
 
   render() {

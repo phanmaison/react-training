@@ -195,24 +195,13 @@
   ],
   "listtodo": [
     {
-      "id": "1",
-      "userid": "1",
-      "todo": "Go For a Walk"
-    },
-    {
       "id": "2",
       "userid": "2",
       "todo": "BBC iPlayer (Europe Only)"
     },
     {
       "id": "3",
-      "userid": "3",
-      "todo": "Learn to Juggle"
-    },
-    {
-      "id": "4",
-      "userid": "1",
-      "todo": "Go Swimming"
+      "userid": "3"
     },
     {
       "id": "5",
@@ -222,7 +211,7 @@
     {
       "id": "9",
       "userid": "1",
-      "todo": "Watch Wildlife"
+      "todo": "Khanh vl"
     },
     {
       "id": "13",
@@ -233,16 +222,6 @@
       "id": "14",
       "userid": "9b283547-43ac-4d0a-8fbb-df1fba6b7b11",
       "todo": "Go On a YouTube Marathon"
-    },
-    {
-      "id": "d84df20b-ec0f-46d0-82a5-892591f016d0",
-      "userid": "6",
-      "todo": "Have a Go at Origami"
-    },
-    {
-      "id": "c585ae57-6f1e-489f-9b04-85a516d5fef6",
-      "userid": "6",
-      "todo": "Have fun with kids"
     },
     {
       "id": "a8dbec95-8f4a-4536-8466-4c6e7f838896",
@@ -350,39 +329,9 @@
       "todo": "Play Free Online Games"
     },
     {
-      "id": "3b564725-4971-4a9d-8b9b-18db309e51db",
-      "userid": "6",
-      "todo": "Get yourself moving"
-    },
-    {
-      "id": "f2aabe1b-244a-4269-a29e-aa35b2280367",
-      "userid": "6",
-      "todo": "Convert comments to tasks using Slack."
-    },
-    {
       "id": "dc30d9b0-d693-4127-ab81-d1bd7fb65027",
       "userid": "9b283547-43ac-4d0a-8fbb-df1fba6b7b11",
       "todo": "NetFlix"
-    },
-    {
-      "id": "8221c015-b59b-460f-9997-a730993bbe19",
-      "userid": "6",
-      "todo": "Book Time in Your Calendar for Tasks"
-    },
-    {
-      "id": "a9d859d3-ad00-42ae-a873-89c7d6e03962",
-      "userid": "6",
-      "todo": "The Unicorn Principle"
-    },
-    {
-      "id": "7236f51a-6aef-4201-8834-9502093ede72",
-      "userid": "6",
-      "todo": "Repurpose Your Great Content"
-    },
-    {
-      "id": "5aabf54a-cbec-4615-aaf6-c9dc00c01537",
-      "userid": "6",
-      "todo": "Be an Intentional Procrastinator"
     },
     {
       "id": "655d353a-95cb-4c21-89d9-0141e0257bf3",
@@ -437,6 +386,36 @@
     {
       "id": "2fbee1f9-9886-49e9-995e-67c65e7927fe",
       "userid": "aeabc075-6a43-47a7-94be-59407529b79f",
+      "todo": "Work Less"
+    },
+    {
+      "id": "2593a288-f1af-4829-92cd-f1ca516edef0",
+      "userid": "1",
+      "todo": "CHECK YOUR SHOPS"
+    },
+    {
+      "id": "12ee1875-3c3c-47bf-90ae-7196db99670b",
+      "userid": "6",
+      "todo": "CHECK YOUR SHOPS"
+    },
+    {
+      "id": "3c862be6-adde-48e4-ad49-af0032a428a6",
+      "userid": "6",
+      "todo": "DIG UP FOSSILS"
+    },
+    {
+      "id": "11f4a6a0-9f8f-4030-ab24-9172d9c3189e",
+      "userid": "6",
+      "todo": "LOOK FOR MESSAGES IN BOTTLES"
+    },
+    {
+      "id": "8dce8406-65eb-429b-8cfa-0a4f677ade06",
+      "userid": "6",
+      "todo": "COMPLETE YOUR FIRST FIVE NOOK MILES+ GOALS"
+    },
+    {
+      "id": "8b367ddb-b143-4626-bcfc-198c77514f83",
+      "userid": "003b75ad-2951-42b2-81df-4c91a97d0b29",
       "todo": "Work Less"
     }
   ]

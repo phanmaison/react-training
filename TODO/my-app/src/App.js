@@ -12,24 +12,30 @@ import {
 import './App.css';
 import Login from './Component/Login';
 import ListTodo from './Component/ListTodo';
+import AlertInfo from './Component/AlertInfo';
 export class App extends Component {
   constructor(props) {
     super(props);
-    
+
   }
-  componentDidMount(){
+  componentDidMount() {
     debugger
-    const {idhandle} = this.props.usernameId;
+    const { idhandle } = this.props.usernameId;
     // this.props.getIdforlist(this.props.usernameId);
   }
   render() {
     return (
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Login} />
-          <Route exact path="/listtodo/:idhandle" component={ListTodo} />
-        </Switch>
-      </Router>
+      <div>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Login} />
+            <Route exact path="/listtodo/:idhandle" component={ListTodo} />
+            {/* <Router exact component={AlertInfo}></Router> */}
+          </Switch>
+        </Router>
+        <AlertInfo></AlertInfo>
+      </div>
+
     )
   }
 }

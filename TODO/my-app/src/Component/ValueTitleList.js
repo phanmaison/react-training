@@ -32,6 +32,7 @@ export class ValueTitleList extends Component {
       .catch(error => {
         console.log(error)
       })
+    this.props.alertOn('deleted successfully');
   }
   eventClickEdit = () => {
     console.log('1111');
@@ -42,6 +43,7 @@ export class ValueTitleList extends Component {
       showPopup: !this.state.showPopup,
       contenttodo: myTitle[0].todo
     })
+    // this.props.alertOn();
   }
   eventClickSave = (editTodo) => {
     console.log(this.props.editvalue);
@@ -60,6 +62,7 @@ export class ValueTitleList extends Component {
     console.log('123');
     console.log(editData);
     this.eventClickEdit();
+    this.props.alertOn('saved successfully');
   }
   clickToolbar() {
     debugger
@@ -110,6 +113,12 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     },
     getEdit: (valueedit) => {
       dispatch({ type: "GET_OBJECT_EDIT", valueedit })
+    },
+    alertOn:(alertcontent)=>{
+      dispatch({ type: "ALERT_ON",alertcontent })
+    },
+    alertOff:()=>{
+      dispatch({ type: "ALERT_OFF" })
     }
   }
 }

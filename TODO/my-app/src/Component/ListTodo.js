@@ -17,6 +17,9 @@ export class ListTodo extends Component {
       checklist:true
     }
   }
+  componentWillMount(){
+    this.props.alertOn('you have successfully logged in');
+  }
   isChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
@@ -70,6 +73,7 @@ export class ListTodo extends Component {
         console.log(res);
         console.log(res.data);
       })
+    this.props.alertOn('Add to database is successful');
   }
   allUser = () => {
     this.setState({
@@ -194,6 +198,12 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     },
     getUsersetclient: (useroftitles) => {
       dispatch({ type: "GET_NAME_USER", useroftitles })
+    },
+    alertOn:(alertcontent)=>{
+      dispatch({ type: "ALERT_ON",alertcontent })
+    },
+    alertOff:()=>{
+      dispatch({ type: "ALERT_OFF" })
     }
   }
 }
