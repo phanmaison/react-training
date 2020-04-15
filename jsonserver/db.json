@@ -200,18 +200,9 @@
       "todo": "BBC iPlayer (Europe Only)"
     },
     {
-      "id": "3",
-      "userid": "3"
-    },
-    {
       "id": "5",
       "userid": "5",
       "todo": "Drum"
-    },
-    {
-      "id": "9",
-      "userid": "1",
-      "todo": "Khanh vl"
     },
     {
       "id": "13",
@@ -396,27 +387,47 @@
     {
       "id": "12ee1875-3c3c-47bf-90ae-7196db99670b",
       "userid": "6",
-      "todo": "CHECK YOUR SHOPS"
+      "todo": "Take a nap."
     },
     {
       "id": "3c862be6-adde-48e4-ad49-af0032a428a6",
       "userid": "6",
-      "todo": "DIG UP FOSSILS"
+      "todo": "Watch your stimulant and alcohol use."
     },
     {
       "id": "11f4a6a0-9f8f-4030-ab24-9172d9c3189e",
       "userid": "6",
-      "todo": "LOOK FOR MESSAGES IN BOTTLES"
-    },
-    {
-      "id": "8dce8406-65eb-429b-8cfa-0a4f677ade06",
-      "userid": "6",
-      "todo": "COMPLETE YOUR FIRST FIVE NOOK MILES+ GOALS"
+      "todo": "Build in a treat."
     },
     {
       "id": "8b367ddb-b143-4626-bcfc-198c77514f83",
       "userid": "003b75ad-2951-42b2-81df-4c91a97d0b29",
       "todo": "Work Less"
+    },
+    {
+      "id": "698c518c-a30b-43cf-abc9-02c1940714c2",
+      "userid": "6",
+      "todo": "Handle those errands!"
+    },
+    {
+      "id": "442a6c8e-669a-456d-b8f0-31be339fb596",
+      "userid": "6",
+      "todo": "Handle those erraGet yourself moving.nds!"
+    },
+    {
+      "id": "1f07f9b9-1437-43df-bcfc-23e331d9b855",
+      "userid": "6",
+      "todo": "Respect your way of recharging."
+    },
+    {
+      "id": "4aa94e81-7ea1-415b-9259-1bb3652dab29",
+      "userid": "6",
+      "todo": "Eat well."
+    },
+    {
+      "id": "2aa7cff5-e384-4424-bd14-6d0e35e539b8",
+      "userid": "6",
+      "todo": "Prepare for the morning."
     }
   ]
 }
