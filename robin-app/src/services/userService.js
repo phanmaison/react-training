@@ -1,3 +1,5 @@
+import store from "../stores/store"
+
 class UserService {
   constructor() {
     this.isAuthenticate = false;
