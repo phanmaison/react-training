@@ -21,14 +21,14 @@ namespace ToDoApp.Controllers
         [HttpPost]
         [Route("login")]
         
-        public async Task<ActionResult> Login(UserModel model)
+        public async Task<ActionResult> Login(LoginUserModel model)
         {
             if (ModelState.IsValid)
             {
-                var userExisted = await _userService.CheckExist(model.Email);
+                var userExisted = await _userService.CheckExist(model.Username);
                 if (userExisted)
                 {
-                    var result = await _userService.Login(model.Email, model.Password);
+                    var result = await _userService.Login(model.Username, "");
                     //add session
                     
                     HttpContext.Session.SetString("Email", result.UserName);
@@ -40,7 +40,7 @@ namespace ToDoApp.Controllers
                 {
                     var newuser = await _userService.Create(new User
                     {
-                        UserName = model.Email
+                        UserName = model.Username
                     });
                     HttpContext.Session.SetString("Email", newuser.UserName);
                     HttpContext.Session.SetString("idUser", newuser.Id.ToString());

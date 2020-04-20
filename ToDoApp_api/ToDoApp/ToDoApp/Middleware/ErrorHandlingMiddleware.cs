@@ -8,6 +8,9 @@ using ToDoApp.Model;
 
 namespace ToDoApp.Middleware
 {
+    /// <summary>
+    /// Exception handler for the whole application
+    /// </summary>
     public class ErrorHandlingMiddleware
     {
         private readonly RequestDelegate _next;
@@ -23,7 +26,7 @@ namespace ToDoApp.Middleware
         {
             try
             {
-                
+
                 await _next(context);
             }
             catch (Exception ex)
@@ -38,10 +41,12 @@ namespace ToDoApp.Middleware
         {
             var result = JsonConvert.SerializeObject(new FailureModel
             {
-                Message = "Oops! There is an error, please try again."
+                Message = "Exception found, please contact our administrator"
             });
+
             context.Response.ContentType = "application/json";
-            context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+            context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+
             return context.Response.WriteAsync(result);
         }
     }

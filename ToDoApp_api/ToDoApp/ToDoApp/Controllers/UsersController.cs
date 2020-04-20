@@ -40,22 +40,20 @@ namespace ToDoApp.Controllers
         // more details see https://aka.ms/RazorPagesCRUD.
 
         /// <summary>
-        /// Create new users
+        /// Login user, if the user is not existed then create a new one
         /// </summary>
         /// <param name="user">The user.</param>
         /// <returns></returns>
         [HttpPost]
         [Route("create")]
-        public async Task<ActionResult<User>> Create(UserModel user)
+        public async Task<ActionResult<User>> Login(LoginUserModel user)
         {
-            if (!ValidateEmail(user.Email))
+            if (string.IsNullOrWhiteSpace(user.Username))
             {
-                return BadRequest(new FailureModel
-                {
-                    Message = "Invalid Email"
-                });
+                return BadRequest("Username is required");
             }
-            if (await _userService.CheckExist(user.Email))
+
+            if (await _userService.CheckExist(user.Username))
             {
                 return BadRequest(new FailureModel
                 {
@@ -65,7 +63,7 @@ namespace ToDoApp.Controllers
 
             await _userService.Create(new User
             {
-                UserName = user.Email
+                UserName = user.Username
             });
 
             return Ok(new BaseModel
@@ -74,14 +72,14 @@ namespace ToDoApp.Controllers
             });
         }
 
-        private static bool ValidateEmail(string email)
-        {
-            if (string.IsNullOrWhiteSpace(email))
-            {
-                return false;
-            }
+        //private static bool ValidateEmail(string email)
+        //{
+        //    if (string.IsNullOrWhiteSpace(email))
+        //    {
+        //        return false;
+        //    }
 
-            return Regex.Match(email, "^[a-z0-9_\\+-]+(\\.[a-z0-9_\\+-]+)*@[a-z0-9-]+(\\.[a-z0-9]+)*\\.([a-z]{2,4})$").Success;
-        }
+        //    return Regex.Match(email, "^[a-z0-9_\\+-]+(\\.[a-z0-9_\\+-]+)*@[a-z0-9-]+(\\.[a-z0-9]+)*\\.([a-z]{2,4})$").Success;
+        //}
     }
 }

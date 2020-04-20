@@ -17,6 +17,12 @@ namespace ToDoApp
 {
     public class Startup
     {
+#if DEBUG
+        private const bool Debug = true;
+#else
+        private const bool Debug = true;
+#endif
+
         private IHostingEnvironment _environment;
 
         public Startup(IConfiguration configuration)
@@ -53,7 +59,7 @@ namespace ToDoApp
                 });
 
                 var xmlFile = $"ToDoApp.xml";
-                var xmlPath = Path.Combine(_environment.ContentRootPath, "bin", xmlFile);
+                var xmlPath = Path.Combine(_environment.ContentRootPath, Debug ? "bin" : "", xmlFile);
                 c.IncludeXmlComments(xmlPath);
 
             });

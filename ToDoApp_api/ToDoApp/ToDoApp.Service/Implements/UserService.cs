@@ -9,47 +9,41 @@ using ToDoApp.Service.Interfaces;
 
 namespace ToDoApp.Service.Implements
 {
-    public class UserService : IUserService
+    public class UserService : GenericServiceBase<User>, IUserService
     {
-        private readonly ToDoAppDbContext _dbContext;
-        public UserService(ToDoAppDbContext dbContext)
+        public UserService(ToDoAppDbContext dbContext) : base(dbContext)
         {
-            _dbContext = dbContext;
         }
 
         public async Task<bool> CheckExist(string userName)
         {
-            return await _dbContext.Users.AnyAsync(x => x.UserName == userName);
+            return await DbContext.Users.AnyAsync(x => x.UserName == userName);
         }
 
         public async Task<User> Create(User entity)
         {
-            _dbContext.Users.Add(entity);
-            await _dbContext.SaveChangesAsync();
+            DbContext.Users.Add(entity);
+            await DbContext.SaveChangesAsync();
             return entity;
         }
 
         public async Task<User> Get(string userName)
         {
-            var user = await _dbContext.Users.AsNoTracking().SingleOrDefaultAsync(x => x.UserName == userName);
+            var user = await this.DbSet.AsNoTracking().SingleOrDefaultAsync(x => x.UserName == userName);
             return user;
         }
 
         public async Task<List<User>> GetAll()
         {
-            return await _dbContext.Users.ToListAsync();
+            return await this.DbSet.ToListAsync();
         }
+
 
         public async Task<User> Login(string userName, string password)
         {
-            var user =  _dbContext.Users.SingleOrDefault(x => x.UserName == userName);           
-            if (user.Password == password)
-                return user;
-            else
-                return null;
+            var user = this.DbSet.SingleOrDefault(x => x.UserName == userName);
+            return user;
         }
-
-        
     }
 
 }
