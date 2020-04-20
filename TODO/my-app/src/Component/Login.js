@@ -11,6 +11,7 @@ import {
 import ListTodo from './ListTodo';
 import { v4 as uuidv4 } from 'uuid';
 import store from '../Store/appStore'
+import { NavLink } from 'react-bootstrap';
 export class Login extends Component {
   constructor(props) {
     super(props);
@@ -38,8 +39,9 @@ export class Login extends Component {
     console.log(name);
     console.log(value)
   }
-  addDataUser = (username) => {
+  addDataUser = (username,e) => {
     debugger
+    e.preventDefault();
     var item = {};
     item.username = username;
     item.id = uuidv4();
@@ -49,6 +51,7 @@ export class Login extends Component {
     if(found = this.props.allUser.some(el => el.username === item.username)){
       var myObject = this.props.allUser.filter(x => x.username === item.username);
       this.props.dataUserId(myObject[0].id)
+      this.props.history.push(`/listtodo/`+(myObject[0].id));
     }
     else{
       this.props.dataUserId(item.id);
@@ -77,7 +80,11 @@ export class Login extends Component {
         console.log(response.data)
       })
       .catch(error => console.log(error))
+    // return(
+    //   <Redirect to={"/listtodo/" + this.props.usernameId}></Redirect>
+    // )
     console.log(this.state.array) ;
+    
   }
 
   render() {
@@ -93,7 +100,8 @@ export class Login extends Component {
         </div>
         <div className="footer text-center">
           {/* <button type="reset" className="button" onClick={() => this.addDataUser(this.state.username)}>Login</button> */}
-          <a className="btn btn-success" href={"/listtodo/" + this.props.usernameId} onClick={() => this.addDataUser(this.state.username)}>Login</a>
+          {/* <a className="btn btn-success" href={"/listtodo/" + this.props.usernameId} onClick={(e) => this.addDataUser(this.state.username,e)}>Login</a> */}
+          <button className="btn btn-success" onClick={(e) => this.addDataUser(this.state.username,e)}>Login</button>
         </div>
       </form>
     )

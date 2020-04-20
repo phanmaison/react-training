@@ -89,7 +89,7 @@ export class ListTodo extends Component {
     return this.props.myuserTitle;
   }
   checkFunction = (id)=>{
-    alert(id)
+    
   }
   render() {
     { this.getData(); }
@@ -132,7 +132,7 @@ export class ListTodo extends Component {
                   <h3 className="user-list">User List</h3>
                 </div>
                 <div className="col-sm-1 col-12">
-                  <button className="btn btn-outline-dark redirectomain" onClick={() => this.cancel()}><i className="fas fa-list"></i></button>
+                  <button className="btn btn-danger" onClick={() => this.cancel()}><i className="fas fa-backspace"></i></button>
                 </div>
               </div>
               <div className="row">
