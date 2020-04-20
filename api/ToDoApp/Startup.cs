@@ -15,24 +15,30 @@ using Newtonsoft.Json.Serialization;
 
 namespace ToDoApp
 {
+    /// <summary>
+    /// Start up the application
+    /// </summary>
     public class Startup
     {
-#if DEBUG
-        private const bool Debug = true;
-#else
-        private const bool Debug = true;
-#endif
 
         private IHostingEnvironment _environment;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Startup"/> class.
+        /// </summary>
+        /// <param name="configuration">The configuration.</param>
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        private IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        /// <summary>
+        /// Configures the services.
+        /// </summary>
+        /// <param name="services">The services.</param>
         public void ConfigureServices(IServiceCollection services)
         {
             //services.AddControllers();
@@ -59,7 +65,7 @@ namespace ToDoApp
                 });
 
                 var xmlFile = $"ToDoApp.xml";
-                var xmlPath = Path.Combine(_environment.ContentRootPath, Debug ? "bin" : "", xmlFile);
+                var xmlPath = Path.Combine(_environment.ContentRootPath, xmlFile);
                 c.IncludeXmlComments(xmlPath);
 
             });
@@ -70,6 +76,11 @@ namespace ToDoApp
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /// <summary>
+        /// Configures the specified application.
+        /// </summary>
+        /// <param name="app">The application.</param>
+        /// <param name="env">The env.</param>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             _environment = env;

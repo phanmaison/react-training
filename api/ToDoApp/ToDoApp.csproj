@@ -5,23 +5,23 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\ToDoApp.xml</DocumentationFile>
+    <DocumentationFile>ToDoApp.xml</DocumentationFile>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\ToDoApp.xml</DocumentationFile>
+    <DocumentationFile>ToDoApp.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="bin\**" />
     <Compile Remove="logs\**" />
+    <Content Remove="bin\**" />
     <Content Remove="logs\**" />
+    <EmbeddedResource Remove="bin\**" />
     <EmbeddedResource Remove="logs\**" />
+    <None Remove="bin\**" />
     <None Remove="logs\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="bin\ToDoApp.xml" />
   </ItemGroup>
 
   <ItemGroup>

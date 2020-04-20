@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ToDoApp</name>
+    </assembly>
+    <members>
+        <member name="T:ToDoApp.Controllers.ToDoesController">
+            <summary>
+            Task management
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="M:ToDoApp.Controllers.ToDoesController.Gets">
+            <summary>
+            Get all tasks
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ToDoApp.Controllers.ToDoesController.Get(System.Guid)">
+            <summary>
+            Get tasks by taskId
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ToDoApp.Controllers.ToDoesController.GetToDoByUserId(System.String)">
+            <summary>
+            Get tasks by userId
+            </summary>
+            <param name="userId">The user identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ToDoApp.Controllers.ToDoesController.PutToDo(System.Guid,ToDoApp.Domain.Entity.ToDo)">
+            <summary>
+            Update task
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="model">The model.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ToDoApp.Controllers.ToDoesController.Post(ToDoApp.Domain.Entity.ToDo)">
+            <summary>
+            Create new task
+            </summary>
+            <param name="model">The model.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ToDoApp.Controllers.ToDoesController.DeleteToDo(System.Guid)">
+            <summary>
+            Delete task by Id
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="T:ToDoApp.Controllers.UsersController">
+            <summary>
+            User management
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="M:ToDoApp.Controllers.UsersController.Index">
+            <summary>
+            Get all users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ToDoApp.Controllers.UsersController.Login(ToDoApp.Model.LoginUserModel)">
+            <summary>
+            Login user, if the user is not existed then create a new one
+            </summary>
+            <param name="user">The user.</param>
+            <returns></returns>
+        </member>
+        <member name="T:ToDoApp.Middleware.ErrorHandlingMiddleware">
+            <summary>
+            Exception handler for the whole application
+            </summary>
+        </member>
+        <member name="T:ToDoApp.Model.LoginUserModel">
+            <summary>
+            Model for login user
+            </summary>
+        </member>
+        <member name="P:ToDoApp.Model.LoginUserModel.Username">
+            <summary>
+            username
+            </summary>
+        </member>
+    </members>
+</doc>
