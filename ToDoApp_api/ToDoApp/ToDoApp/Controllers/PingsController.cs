@@ -1,9 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using ToDoApp.Domain.Entity;
-using ToDoApp.Model;
-using ToDoApp.Service.Interfaces;
 
 namespace ToDoApp.Controllers
 {
@@ -17,7 +13,7 @@ namespace ToDoApp.Controllers
 
         [HttpGet]
         [Route("")]
-        public async Task<ActionResult> Index()
+        public ActionResult Index()
         {
             return new ObjectResult(new
             {

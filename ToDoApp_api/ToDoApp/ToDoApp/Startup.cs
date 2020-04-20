@@ -7,13 +7,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using System;
 using System.IO;
-using System.Reflection;
 using ToDoApp.Domain;
 using ToDoApp.Middleware;
 using ToDoApp.Service.Implements;
 using ToDoApp.Service.Interfaces;
 using Newtonsoft.Json.Serialization;
-using System.Text;
 
 namespace ToDoApp
 {
@@ -40,7 +38,8 @@ namespace ToDoApp
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
                 .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver());
 
-            services.AddSession(options => {
+            services.AddSession(options =>
+            {
                 options.IdleTimeout = TimeSpan.FromMinutes(60);//You can set Time
             });
 
@@ -53,9 +52,9 @@ namespace ToDoApp
                     Description = "A simple example ASP.NET Core Web API"
                 });
 
-                //var xmlFile = $"ToDoApp.xml";
-                //var xmlPath = Path.Combine(_environment.ContentRootPath, "bin", xmlFile);
-                //c.IncludeXmlComments(xmlPath);
+                var xmlFile = $"ToDoApp.xml";
+                var xmlPath = Path.Combine(_environment.ContentRootPath, "bin", xmlFile);
+                c.IncludeXmlComments(xmlPath);
 
             });
 
@@ -82,15 +81,17 @@ namespace ToDoApp
             app.UseMiddleware(typeof(ErrorHandlingMiddleware));
             app.UseSession();
             app.UseMvc();
+
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "TODOAPP API");
             });
-            app.Run(async context =>
-            {
-                context.Response.Redirect("swagger/index.html");
-            });
+
+            //app.Run(async context =>
+            //{
+            //    context.Response.Redirect("/swagger/index.html");
+            //});
         }
     }
 }

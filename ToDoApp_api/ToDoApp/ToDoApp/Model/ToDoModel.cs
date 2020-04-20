@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using ToDoApp.Domain.Entity;
-using ToDoApp.Domain.Enums;
 
 namespace ToDoApp.Model
 {
