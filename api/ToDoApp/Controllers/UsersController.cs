@@ -13,7 +13,7 @@ namespace ToDoApp.Controllers
     /// <seealso cref="Microsoft.AspNetCore.Mvc.ControllerBase" />
     [Route("api/user")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class UsersController : AppControllerBase
     {
         private readonly IUserService _userService;
 
@@ -53,7 +53,7 @@ namespace ToDoApp.Controllers
                 return BadRequest("Username is required");
             }
 
-            if (await _userService.CheckExist(user.Username))
+            if (await _userService.IsExist(user.Username))
             {
                 return BadRequest(new FailureModel
                 {

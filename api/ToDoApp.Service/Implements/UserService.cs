@@ -15,7 +15,7 @@ namespace ToDoApp.Service.Implements
         {
         }
 
-        public async Task<bool> CheckExist(string userName)
+        public async Task<bool> IsExist(string userName)
         {
             return await DbContext.Users.AnyAsync(x => x.UserName == userName);
         }

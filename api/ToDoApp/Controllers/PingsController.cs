@@ -5,7 +5,7 @@ namespace ToDoApp.Controllers
 {
     [Route("api/Pings")]
     [ApiController]
-    public class PingsController : ControllerBase
+    public class PingsController : AppControllerBase
     {
         public PingsController()
         {

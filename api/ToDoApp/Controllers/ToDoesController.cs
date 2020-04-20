@@ -14,7 +14,7 @@ namespace ToDoApp.Controllers
     /// <seealso cref="Microsoft.AspNetCore.Mvc.ControllerBase" />
     [Route("api/[controller]")]
     [ApiController]
-    public class ToDoesController : ControllerBase
+    public class ToDoesController : AppControllerBase
     {
         private readonly IToDoService _toDoService;
         private readonly IUserService _userService;

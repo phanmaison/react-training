@@ -4,8 +4,8 @@ import LoginLayout from "./components/login/LoginLayout";
 import MainLayout from "./components/main/MainLayout";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
-import {PrivateRoute} from "./components/common/PrivateRoute"
-import Loader from "./components/common/Loader"
+import { PrivateRoute } from "./components/common/PrivateRoute";
+import Loader from "./components/common/Loader";
 
 // import { ToastContainer } from "react-toastr";
 
@@ -37,7 +37,7 @@ function App() {
           Login
         </Link>
       </div>
-    <Loader />
+      <Loader />
       {/* Router switch, point to layout component, each component will handle its own business */}
       <Switch>
         <Route exact path="/login">

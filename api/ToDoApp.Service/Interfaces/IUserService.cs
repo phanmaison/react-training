@@ -9,7 +9,7 @@ namespace ToDoApp.Service.Interfaces
     {
         Task<User> Get(string userName);
         Task<List<User>> GetAll();
-        Task<bool> CheckExist(string userName);
+        Task<bool> IsExist(string userName);
         Task<User> Create(User entity);
         Task<User> Login(string userName, string password);
     }
