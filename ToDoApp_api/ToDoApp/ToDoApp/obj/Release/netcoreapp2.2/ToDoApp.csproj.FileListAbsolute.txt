@@ -26,3 +26,30 @@ D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.2\ToDoApp.csproj.CopyComplete
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.2\ToDoApp.dll
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.2\ToDoApp.pdb
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\appsettings.Development.json
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\appsettings.json
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\web.config
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\ToDoApp.deps.json
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\ToDoApp.runtimeconfig.json
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\ToDoApp.runtimeconfig.dev.json
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\ToDoApp.dll
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\ToDoApp.pdb
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\ToDoApp.Domain.dll
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\ToDoApp.Service.dll
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\EntityFramework.dll
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\ToDoApp.Domain.pdb
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\ToDoApp.Domain.dll.config
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\ToDoApp.Service.pdb
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\bin\Release\netcoreapp2.2\EntityFramework.xml
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.2\ToDoApp.csprojAssemblyReference.cache
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.2\ToDoApp.csproj.CoreCompileInputs.cache
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.2\ToDoApp.RazorAssemblyInfo.cache
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.2\ToDoApp.RazorAssemblyInfo.cs
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.2\ToDoApp.AssemblyInfoInputs.cache
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.2\ToDoApp.AssemblyInfo.cs
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.2\ToDoApp.RazorTargetAssemblyInfo.cache
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.2\ToDoApp.csproj.CopyComplete
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.2\ToDoApp.dll
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.2\ToDoApp.pdb
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp\obj\Release\netcoreapp2.2\ToDoApp.genruntimeconfig.cache

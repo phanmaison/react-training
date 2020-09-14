@@ -15,3 +15,18 @@ D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Release\net
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Release\netcoreapp2.2\ToDoApp.Service.csproj.CopyComplete
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Release\netcoreapp2.2\ToDoApp.Service.dll
 D:\New folder\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Release\netcoreapp2.2\ToDoApp.Service.pdb
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Release\netcoreapp2.2\ToDoApp.Service.deps.json
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Release\netcoreapp2.2\ToDoApp.Service.dll
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Release\netcoreapp2.2\ToDoApp.Service.pdb
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Release\netcoreapp2.2\ToDoApp.Domain.dll
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Release\netcoreapp2.2\EntityFramework.dll
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Release\netcoreapp2.2\ToDoApp.Domain.pdb
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Release\netcoreapp2.2\ToDoApp.Domain.dll.config
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\bin\Release\netcoreapp2.2\EntityFramework.xml
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Release\netcoreapp2.2\ToDoApp.Service.csprojAssemblyReference.cache
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Release\netcoreapp2.2\ToDoApp.Service.csproj.CoreCompileInputs.cache
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Release\netcoreapp2.2\ToDoApp.Service.AssemblyInfoInputs.cache
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Release\netcoreapp2.2\ToDoApp.Service.AssemblyInfo.cs
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Release\netcoreapp2.2\ToDoApp.Service.csproj.CopyComplete
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Release\netcoreapp2.2\ToDoApp.Service.dll
+C:\Users\linh.tran\Documents\react-training\ToDoApp_api\ToDoApp\ToDoApp.Service\obj\Release\netcoreapp2.2\ToDoApp.Service.pdb

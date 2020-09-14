@@ -1,41 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "D:\\New folder\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Service\\ToDoApp.Service.csproj": {}
+    "C:\\Users\\linh.tran\\Documents\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Service\\ToDoApp.Service.csproj": {}
   },
   "projects": {
-    "D:\\New folder\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Domain\\ToDoApp.Domain.csproj": {
+    "C:\\Users\\linh.tran\\Documents\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Domain\\ToDoApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\New folder\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Domain\\ToDoApp.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\linh.tran\\Documents\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Domain\\ToDoApp.Domain.csproj",
         "projectName": "ToDoApp.Domain",
-        "projectPath": "D:\\New folder\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Domain\\ToDoApp.Domain.csproj",
-        "projectStyle": "PackagesConfig",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        },
-        "packagesConfigPath": "D:\\New folder\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Domain\\packages.config"
+        "projectPath": "C:\\Users\\linh.tran\\Documents\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Domain\\ToDoApp.Domain.csproj"
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "D:\\New folder\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Service\\ToDoApp.Service.csproj": {
+    "C:\\Users\\linh.tran\\Documents\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Service\\ToDoApp.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\New folder\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Service\\ToDoApp.Service.csproj",
+        "projectUniqueName": "C:\\Users\\linh.tran\\Documents\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Service\\ToDoApp.Service.csproj",
         "projectName": "ToDoApp.Service",
-        "projectPath": "D:\\New folder\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Service\\ToDoApp.Service.csproj",
-        "packagesPath": "C:\\Users\\tranl\\.nuget\\packages\\",
-        "outputPath": "D:\\New folder\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Service\\obj\\",
+        "projectPath": "C:\\Users\\linh.tran\\Documents\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Service\\ToDoApp.Service.csproj",
+        "packagesPath": "C:\\Users\\linh.tran\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\linh.tran\\Documents\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tranl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\linh.tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,8 +41,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\New folder\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Domain\\ToDoApp.Domain.csproj": {
-                "projectPath": "D:\\New folder\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Domain\\ToDoApp.Domain.csproj"
+              "C:\\Users\\linh.tran\\Documents\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Domain\\ToDoApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\linh.tran\\Documents\\react-training\\ToDoApp_api\\ToDoApp\\ToDoApp.Domain\\ToDoApp.Domain.csproj"
               }
             }
           }
@@ -88,7 +81,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
